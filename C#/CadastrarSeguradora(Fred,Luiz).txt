@@ -1,0 +1,64 @@
+using System;
+//Variáveis----------------------
+public class Seguradora{
+private int NumeroChassi, NumeroPlaca, AnoFabricacao;
+private string Fabricante;
+public string CorVeiculo;
+//metódos------------------------
+public void SetArmazenarChassi(int Chassi){
+	NumeroChassi = Chassi;
+}
+	
+public int GetExibirChassi(){
+	return (NumeroChassi);
+}
+//----------------------------------------------
+public void setArmazenarPlaca (int placa){
+	NumeroPlaca = placa; 
+}
+public int GetExibirPlaca(){
+	return  (NumeroPlaca);
+}
+//----------------------------------------------
+public void SetArmazenarAnoFab (int AnoFab){
+	AnoFabricacao = AnoFab;
+}
+	 
+public int GetExibirAnoFab(){
+	return  (AnoFabricacao);
+}
+//----------------------------------------------
+public void SetArmazenarFab (String Fab){
+	Fabricante = Fab;
+}
+public String GetExibirFabricante(){
+	return  (Fabricante);
+}
+//----------------------------------------------	
+public void SetArmazenarCorVeiculo (String Cor){
+	CorVeiculo = Cor;
+}
+public String GetExibireCorVeiculo(){
+	return  (CorVeiculo);
+}
+//----------------------------------------------
+public class Program
+{
+	public static void Main()
+	{
+		Seguradora Seguradora1 = new Seguradora();
+		
+		Seguradora1.SetArmazenarChassi(354);
+		Seguradora1.setArmazenarPlaca(354);
+		Seguradora1.SetArmazenarAnoFab(2020);
+		Seguradora1.SetArmazenarFab("Fiat");
+		Seguradora1.SetArmazenarCorVeiculo("pink");
+		
+		
+		
+		
+		
+		
+		}
+	}
+}

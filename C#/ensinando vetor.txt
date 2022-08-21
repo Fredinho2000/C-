@@ -1,0 +1,20 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		 int[] vetor;
+
+            vetor = new int[4];
+
+            vetor[0] = 7;
+            vetor[1] = 5;
+            vetor[2] = 1;
+            vetor[3] = 3;
+
+            int tamanho = vetor.Length; //o Lenght ele mostra o quanto você estanciou
+
+            System.Array.Sort(vetor); //usado para organizar o vetor, deixa a sequência de números crescentes
+	}
+}

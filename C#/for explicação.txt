@@ -1,0 +1,15 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		String[]nomes = new String[10];
+		
+		for(int i=0;i<10;i++){ //informar com qual número vai começar a repetição com o "int i=0;" em seguida informamos até quantos vez irá repetir com o "i<10" (não é obrigatório ser 10) com o "i++" iremos fazer repetir a ação ató o final que você definir. ex 10.
+		Console.WriteLine("informe um nome: ");
+		nomes[i] = Console.ReadLine();
+		
+		}
+	}
+}

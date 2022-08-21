@@ -1,0 +1,30 @@
+using System;
+public class Veiculo{
+public int velocidade;
+public string nome;
+}
+public class Carro:Veiculo{
+private int chassi;
+
+public void SetChassi(int chass){
+this.chassi = chass;
+}
+public int GetChassi(){
+return this.chassi;
+}
+}
+public class Program
+{
+	public static void Main()
+	{
+		Veiculo v1 = new Veiculo();
+		Console.WriteLine("Informe o nome do Veiculo: ");
+		v1.nome = Console.ReadLine();
+		Console.WriteLine("Informe a velocidade do Veiculo: ");
+		v1.velocidade = (int.Parse(Console.ReadLine()));
+		
+		Carro c1 = new Carro();
+		Console.WriteLine("Informe o chassi do carro: ");
+		c1.SetChassi = (Console.ReadLine());
+	}
+}

@@ -1,0 +1,17 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+	double num1,num2, Resultado;
+		
+	Console.WriteLine("Informe o primeiro Número: ");
+	num1 = double.Parse(Console.ReadLine());
+	Console.WriteLine("Informe o segundo Número: ");
+	num2 = double.Parse(Console.ReadLine());
+	
+	Resultado = num1 + num2;
+	Console.WriteLine("O resultado é: " + Resultado);
+	}
+}

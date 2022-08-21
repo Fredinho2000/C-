@@ -1,0 +1,9 @@
+int[] vetor;
+            vetor = new int[4];
+
+            vetor[0] = 8;
+            vetor[1] = 10;
+            vetor[2] = 20;
+            vetor[3] = 3;
+
+            int tamanho = vetor.Length; //o Lenght ele mostra o quanto você estanciou

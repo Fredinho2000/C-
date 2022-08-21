@@ -1,0 +1,82 @@
+using System;
+public class ContaBancaria{
+	private int numconta;
+	private float saldo=0;
+	private float novosaldo;
+
+	public void setNumconta(int numconta){
+		this.numconta = numconta;
+	}
+	
+	public int getNumconta(){
+		return this.numconta;
+	}
+	
+	public void setSaldo(float saldo){
+		this.saldo = saldo;
+	}
+	
+	public float getSaldo(){
+		return this.saldo;
+	}
+	
+	public void depositarValor(float valor){
+		this.novosaldo = this.saldo + valor;
+	}
+	
+	public void sacarValor(float valor){
+		this.novosaldo =- valor;
+	}
+	
+	public float exibirNovoSaldo(){
+		return this.novosaldo;
+	}
+
+}
+
+public class Program
+{
+	public static void Main()
+	{
+		int op;
+		String opmenu;
+		
+		ContaBancaria cb1 = new ContaBancaria();
+		
+		do{
+		Console.WriteLine("Informe o número da conta: ");
+		cb1.setNumconta(int.Parse(Console.ReadLine()));
+		Console.Clear();
+		Console.WriteLine("------------------Informe a Operação------------------");
+		Console.WriteLine("1-Ver saldo		2-Depositar		3-Fazer Saque");
+		op = int.Parse(Console.ReadLine());
+		Console.Clear();
+		
+		
+		switch(op){
+			case 1:
+				Console.WriteLine("Seu saldo é R$:" + cb1.exibirNovoSaldo());
+			break;
+			case 2:
+				Console.WriteLine("Informe o valor do depósito: ");
+				cb1.depositarValor(float.Parse(Console.ReadLine()));
+				Console.WriteLine("VALOR DEPOSITADO COM SUCESSO!");
+			break;
+			case 3:
+				Console.WriteLine("Informe o valor do saque: ");
+				cb1.sacarValor(float.Parse(Console.ReadLine()));
+				Console.WriteLine("SAQUE AUTORIZADO PELA INSTITUIÇÃO!");
+			break;
+		}
+		Console.WriteLine("Deseja fazer outra operação?   S-Sim   N-Não");
+		opmenu = Console.ReadLine();
+
+		}while(opmenu == "S");
+	}
+}
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+using System;
+using System.Collections;
+public class ContaBancária{
+//variavéis
+	private float NumeroConta;
+	private float Saldo;
+//metódos
+	public void SetNumeroConta(float NumConta){
+		this.NumeroConta = NumConta;
+	}
+	
+	public float GetNumeroConta(){
+		return(this.NumeroConta);
+	}
+//--------------------------------------------------------
+	public void SetSaldo(float Sal){
+		this.Saldo = Sal;
+	}
+	public float GetSaldo(){
+		return(this.Saldo);
+	}
+}					
+public class Program
+{
+	public static void Main()
+	{
+		ContaBancária CB1 = new ContaBancária();
+		Console.WriteLine("informe o numero da Conta:");
+		CB1.SetNumeroConta(float.Parse(Console.ReadLine()));
+		
+		Console.WriteLine("Seu Saldo e:");
+		CB1.SetSaldo(float.Parse(Console.ReadLine()));
+		
+		ArrayList SaquesConta = new ArrayList();
+		Console.WriteLine("Hello World");
+	}
+}

@@ -1,0 +1,31 @@
+using System;
+//exercicio feito pelo aluno Frederico Martins				
+public class Program
+{
+	public static void Main()
+	{
+		int[]numeros = new int[6];
+		Console.WriteLine("----Vamos somar números de vetores ^-^----");
+		Console.WriteLine("informe o primeiro número");
+		numeros[0] = int.Parse(Console.ReadLine());
+		Console.WriteLine("informe o segundo número");
+		numeros[1] = int.Parse(Console.ReadLine());
+		Console.WriteLine("informe o terceiro número");
+		numeros[2] = int.Parse(Console.ReadLine());
+		Console.WriteLine("informe o quarto número");
+		numeros[3] = int.Parse(Console.ReadLine());
+		Console.WriteLine("informe o quinto número");
+		numeros[4] = int.Parse(Console.ReadLine());
+		Console.WriteLine("informe o sexto número");
+		numeros[5] = int.Parse(Console.ReadLine());
+		
+		int soma=0;
+		
+		soma = numeros[0] + numeros[1] + numeros[2] + numeros[3] + numeros[4] + numeros[5];
+		
+		Console.WriteLine("o resultado da soma do vetor é: " + soma+" ^-^");
+		
+		
+		
+	}
+}

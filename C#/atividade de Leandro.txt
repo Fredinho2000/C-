@@ -1,0 +1,49 @@
+using System;	
+using System.Collections;
+
+public class Aluno{
+	private int matricula;
+	private String nome;
+	
+public void SetMat(int mat){
+matricula = mat;
+}
+	
+public int GetMat(){
+return(matricula);
+
+}
+ public void SetNome(String Nome){
+Nome = nome;
+}
+
+public String GetNome(){
+return(nome);
+		
+}
+
+public class Program
+{
+	public static void Main()
+	{
+	Aluno a1 = new Aluno();
+	Aluno a2 = new Aluno();
+		
+	a1.matricula = 001;
+	a1.nome = "Leandro";
+	
+	a2.matricula = 002;
+	a2.nome = "Feirreira";
+		
+	ArrayList matriculas = new ArrayList();
+	matriculas.Add(a1);
+	matriculas.Add(a2);
+
+	foreach(Aluno a in matriculas){
+		Console.WriteLine("---------------Aluno----------------");
+		Console.WriteLine("Nome: " + a.matricula);
+		Console.WriteLine("Nome do Aluno: " + a.nome);
+		}
+	}
+}
+}

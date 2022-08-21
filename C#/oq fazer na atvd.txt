@@ -1,0 +1,1 @@
+variaveis de classe veiculo são quantidades de pessoas, chassi,velocidade e quantidade de pessoas e velocidade na classe carro que e a herança
